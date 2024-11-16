@@ -1,0 +1,295 @@
+* {
+    text-align: left;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+}
+
+img {
+    position: inherit;
+    height: auto;
+    padding: 5%;
+}
+
+header,
+footer, nav,
+main {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+header {
+    margin-bottom: 50px;
+}
+
+nav {
+    margin: 15px;
+}
+
+h1, h2, h3, p, ul, li {
+    color: rgb(125, 136, 136);
+}
+
+.categories-h3 {
+    padding-left: 15px;
+}
+
+.content {
+    background-color: rgb(255, 255, 255); /* white rectangle with transparency */
+    padding: 40px;
+    margin: auto; /* Margin to still see a little bit of background */
+    max-width: 1200px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.container_column {
+    column-count: 2;
+    column-width: 200px;
+}
+
+.text-main {
+    width: 70%;
+    float: left;
+    background-color: white;
+    justify-content: left;
+    padding: 20px;
+    font-size: larger;
+    overflow: hidden;
+}
+
+.container-cards {
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card {
+    border: solid 2px lightgrey;
+    padding: 1%;
+    border-radius: 20px;
+    max-width: 200px;
+}
+
+    .card p {
+        padding: 5%;
+    }
+
+    .card img {
+        border-radius: 10px;
+        max-width: 200px;
+        position: inherit;
+        height: auto;
+        padding: 0%;
+    }
+
+/*
+    PAPER----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+    .card:hover {
+        transform: translate3d(0, 2px, 0);
+        box-shadow: 2px 8px 8px -5px rgba(0, 0, 0, 0.3);
+    }
+    Conteneur
+.container {
+    max-width: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    overflow: hidden;
+}
+    Image 
+    .container img {
+        width: 100%; 
+        height: auto; 
+        object-fit: cover; 
+        object-position: center; 
+    }
+
+    PAPER----------------------------------------------------------------------------------------------------------------------------------------------------------------
+*/
+
+aside {
+    background-color: #f4f4f4;
+    width: 20%;
+    float: right;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* très clair: #BF88A6 */
+/* clair: #8C5264 */
+/* foncé: #590A27 */
+a p, a{
+    color: #8C5264;
+    text-decoration: underline;
+}
+    a p:hover, a:hover {
+        color: #BF88A6;
+        /* rgb(28, 124, 124); */
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    color: rgb(125, 136, 136);
+}
+
+    nav a:hover {
+        color: #BF88A6;
+        /* rgb(28, 124, 124); */
+    }
+
+footer a img {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    margin: 40px;
+    padding-top: 50px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.larger_font {
+    font-size: 15px;
+    color: black;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.emphase_max {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.rose {
+    color: #BF88A6;
+}
+
+.red {
+    color: #590A27;
+}
+
+.btn-full-width {
+    width: 100%; /* Prend toute la largeur du conteneur parent */
+    box-sizing: border-box; /* Inclut les bordures dans la largeur totale */
+    margin: 0; /* Retire toute marge */
+    text-align: center;
+    padding: 28px 48px;
+    font-size: 20px;
+}
+
+.container-btn {
+    display: block;
+    margin: auto;
+    text-align: center; /* Centre les �l�ments enfants horizontalement */
+    width: 100%; /* Utilise toute la largeur pour un alignement fluide */
+}
+
+.btn {
+    display: inline-block; /* Permet d'aligner les boutons sur la m�me ligne */
+    border: none;
+    border-radius: 10px;
+    background-color: #590A27;
+    color: white;
+    padding: 28px 48px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 10px; /* Espace entre les boutons */
+}
+
+    .btn:hover {
+        background-color: #8C5264;
+        /* très clair: #BF88A6 */
+        /* clair: #8C5264 */
+        /* foncé: #590A27 */
+    }
+
+.hidden {
+    display: none;
+}
+
+.undermenu {
+    display: none;
+}
+
+.about-undermenu:hover {
+    display: block;/*oups need js*/
+}
+
+
+@media screen and (max-width: 480px) {
+    .btn {
+        margin-bottom: 20px;
+    }
+
+    .content {
+        padding: 20px;
+        margin: 1%;
+        font-size: 70%;
+        overflow: scroll;
+    }
+
+    .text-main {
+        width: 70%;
+        float: left;
+        background-color: white;
+        justify-content: left;
+        padding: 20px;
+    }
+
+    .card {
+        padding: 6%;
+    }
+
+    body {
+        background-image: url("img/background.jpg");
+        background-size: initial;
+        margin: 1%;
+        padding-top: 10px;
+    }
+
+    main {
+        padding: 0px;
+    }
+
+    nav {
+        display: flex;
+        margin: auto;
+    }
+
+    aside {
+        padding: 10px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    footer a img {
+        margin: 0px;
+        padding-top: 0px;
+    }
+}
+
+@media screen and (min-width: 481px) {
+
+    body {
+        background-image: url("img/background.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-attachment: fixed;
+    }
+}

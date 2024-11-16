@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>BiPaG - CIFAH</title>
+    <script type="text/javascript" src="script.js" defer></script>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="news_and_list()">
+
+    <div class="content">
+
+        <header>
+            <a href="index.html"><img src="Logo - BiPaG.png" alt="Logo"></a>
+        </header>
+
+        <hr style="height:4px;border-width:0;color:rgb(238, 238, 238);background-color:rgb(238, 238, 238)">
+
+        <nav>
+            <p><a href="index.html">ACCUEIL</a></p>
+            <p><a href="about.html" class="about-undermenu">CURSUS</a></p>
+            <div class="undermenu">
+                <p><a href="about.html#cursus-description">Description</a></p>
+                <p><a href="about.html#cursus-admissions">Admissions</a></p>
+                <p><a href="about.html#cursus-financements">Bourses et Financements</a></p>
+            </div>
+            <p><a href="checklists.html">GUIDES PAR ANNÉE</a></p>
+            <!-- 1. Futur étudiant
+                2. L1
+                3. L2
+                4. L3-->
+            <p><a href="guides.html">GUIDES PAR THÈME</a></p>
+            <!-- 1. Administratif
+                 2. Méthodes de travail
+                 3. Vie étudiante -->
+            <p><a href="faq.html">FAQ</a></p>
+            <p><a href="contact.html">CONTACT</a></p>
+        </nav>
+
+        <hr style="height:4px;border-width:0;color:rgb(238, 238, 238);background-color:rgb(238, 238, 238)">
+        <main>
+            <div class="text-main">
+                <h1>À propos du cursus</h1>
+                <h2 id="cursus-description">Description</h2>
+                <p class="hidden">
+                    Le cursus intégré franco-allemand en Histoire est une formation sélective et bi-nationale.
+                    Il prépare simultanément à deux diplômes nationaux : la
+                    licence française et le bachelor allemand.<br><br>
+
+                    Il permet de partir en Allemagne <span class="italic">dès la première année</span> et de
+                    passer les deux tiers de sa scolarité (L1 et L2 en Allemagne, L3 en France) dans une
+                    université allemande classée parmi les meilleures du pays en sciences humaines. Les étudiant.e.s
+                    bénéficient d’un tutorat personnalisé et de cours de
+                    langue intensifs. Les étudiant.e.s peuvent également participer à des programmes supplémentaires,
+                    qui, bien qu'ils ne soient pas comptés dans la licence, donnent souvent lieu à des certificats. Grâce au
+                    soutien de l’université franco-allemande (UFA), chaque étudiant.e reçoit, durant la phase
+                    de mobilité, une bourse de 3000 € par an.<br><br><br>
+
+                </p>
+                <a class="hidden" href="https://www.uni-bielefeld.de/fakultaeten/geschichtswissenschaft/studium/studiengaenge/biparis/bachelor/">
+                    <p>https://www.uni-bielefeld.de/fakultaeten/geschichtswissenschaft/studium/studiengaenge/biparis/bachelor/</p>
+                </a>
+                <p>
+                    Le <span class="bold">Cursus Intégré Franco-Allemand en Histoire (CIFAH)</span> est destiné à donner à l’étudiant une culture riche et approfondie en histoire,
+                    avec des bases disciplinaires et méthodologiques qui
+                    permettent de développer réflexion et esprit critique.  <br> Il prépare simultanément la licence française et le bachelor allemand.<br><br>
+
+                    <span class="bold">Les deux premières années à Bielefeld</span> familiarisent les étudiants
+                    avec les grandes problématiques de l’histoire et le travail en petits groupes.
+                    Les nombreux travaux écrits et oraux demandés par le système universitaire allemand procurent
+                    aux étudiants français l’aisance interculturelle et
+                    des compétences linguistiques, disciplinaires et méthodologiques de haut niveau.<br><br>
+
+                    <span class="bold">La troisième année à Paris</span> comporte une offre particulièrement riche,
+                    appuyée sur la spécialisation de chacun des enseignants et le système du
+                    « cours intégré » (pas de cours en amphithéâtre). Si les spécificités de l’enseignement français
+                    davantage basé sur les connaissances perdurent,
+                    l’esprit de l’enseignement de l’histoire est commun aux deux universités :
+                    ouverture internationale, interdisciplinarité.<br><br>
+                </p>
+                <h2 id="cursus-admissions">Admissions</h2>
+                <p>
+                    La candidature se fait sur la
+                    <a href="https://dossier.parcoursup.fr/Candidats/public/fiches/afficherFicheFormation?g_ta_cod=15601&typeBac=0&originePc=0">page de la formation sur Parcoursup</a>
+                    pour le côté français.<br>
+                </p>
+                <h3 class="categories-h3">> Inscription administrative</h3>
+                <p class="italic">
+                    <span class="underline">Inscription administrative:</span> inscription dans l'université en elle-même.<br>
+                    <span class="underline">Inscription pédagogique:</span> inscription aux cours. <br><br>
+                    Année 1 et 2: Inscription pédagogique à Bielefeld.<br>
+                    Année 3: Inscription pédagogique à Paris.<br>
+                    Tous les ans: Inscription administrative dans les 3 universités.
+                </p>
+                <p>Vous devez vous incrire chaque année aux trois universités:</p>
+                <ul>
+                    <li>Université Paris Cité</li>
+                    <li>Université Bielefeld</li>
+                    <li>Université Franco-Allemande</li>
+                    <li>Ainsi que remplir le formulaire de mobilité du SRI</li>
+                </ul>
+                <h3 class="categories-h3">> Inscription à Paris</h3>
+                <p>
+                    Pour une 1ère inscription, <a href="https://u-paris.fr/premiere-inscription/">rendez-vous sur la page dédiée.</a><br>
+                    Pour une réinscription, les démarches sont similaires, <a href="https://u-paris.fr/reinscription-a-universite-paris-cite/">rendez-vous sur cette page.</a>
+                </p>
+                <h3 class="categories-h3">> Inscription à Bielefeld</h3>
+                <p>Envoyer les documents concernés à Patrick Farges?</p>
+                <h3 class="categories-h3">> Inscription à l'Université franco-allemande</h3>
+                <p>
+                    La (ré-)inscription est indispensable pour percevoir l'aide à la mobilité de l'UFA. <br>
+                    Il est nécesssaire de s'inscrire chaque année entre le 02/05 et le 30/09.<br>
+                    <ol>
+                        <li>Créer son compte sur le <a href="https://www.dfh-ufa.org/">site de l'UFA.</a></li>
+                        <li>
+                            Remplir le formulaire d'inscription et le valider.
+                            <br>Sous "Téléchargements", un nouveau document doit être disponible.
+                        </li>
+                    </ol>
+                    <a href="https://www.dfh-ufa.org/fr/vous-etes/etudiant/informations-pour-etudiants">
+                        Plus d'informations ici.
+                    </a>
+                </p>
+                <h3 class="categories-h3">> Dossier de mobilité du SRI</h3>
+                <p>
+                    Remplir le formulaire sur MoveOn, et y attacher les documents demandés:
+                    <ol>
+                        <li>Fiche de renseignement</li>
+                        <li>Formulaire d’engagement</li>
+                        <li>Contrat d’études (Learning Agreement) à imprimer et signer deux fois</li>
+                        <li>Copie de votre carte d’identité ou de votre passeport</li>
+                        <li>Copie de votre carte d’étudiant</li>
+                        <li>Carte d’assurance maladie européenne (CEAM)</li>
+                    </ol>
+                </p>
+                <p>
+                    Aide: GHES signifie Géographie, histoire, économie et sociétés<br><br>
+                    <a href="https://u-paris.fr/candidater-a-une-mobilite-a-linternational/">Informations du site de l'Université de Paris Cité.</a>
+                </p>
+            </div>
+            <aside>
+                <h2 class="hidden">Checklist du moment</h2>
+                <hr class="hidden">
+                <div class="chklist_actual"></div>
+                <h2>News</h2>
+                <hr>
+                <div class="news_loaded" id="news_loaded_id">
+                    <p>Chargement des news...</p>
+                </div>
+            </aside>
+        </main>
+        <footer>
+            <a href="https://www.uni-bielefeld.de/fakultaeten/geschichtswissenschaft/studium/studiengaenge/biparis/bachelor/"><img src="img/Logo_Uni_Bielefeld.jpg" alt=""></a>
+            <a href="https://www.dfh-ufa.org/fr/programmes/guide-des-etudes/143/Histoire?undefined#study_finder"><img src="img/Logo_UFA-DFH.jpg" alt=""></a>
+            <a href="https://odf.u-paris.fr/fr/offre-de-formation/double-licence-XAA/sciences-humaines-et-sociales-SHS/histoire-K4E6AYTM/double-licence-histoire-bachelor-geschichte-cursus-integre-histoire-allemand-avec-l-universite-de-bielefeld-IGXS1VPB.html"><img src="img/Logo_Paris_Cite.jpg" alt=""></a>
+        </footer>
+    </div>
+</body>
+
+</html>
